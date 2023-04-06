@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Roboto:wght@100&family=Shantell+Sans:wght@300&family=Zen+Antique&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #0c192c;
+}
+
+.container {
+    position: relative;
+    height: 50rem;
+    overflow: hidden;
+}
+
+
+/*Img - SETA - VOLTAR */
+.nav-bar>a>img {
+    width: 50px;
+    height: 50px;
+    margin-top: 10%;
+    margin-left: 40%;
+}
+
+/*Img -Left Bots investimentos*/
+.nav-bar>article>img {
+    width: 70px;
+    height: 100px;
+    margin-top: 8.1rem;
+    margin-left: -27rem;
+    display: block;
+}
+/*Img -Rught - Bots investimentos*/
+#img-right {
+    width: 70px;
+    height: 100px;
+    margin-top: -6.2rem;
+    margin-left: -7.5rem;
+    display: block;
+}
+
+.nav-bar {
+    color: #f3f3f3;
+    display: flex;
+    height: 20vh;
+    position: fixed;
+    width: 100%;
+}
+
+aside {
+    margin-top: 3%;
+    margin-left: 34%;
+}
+
+aside>h1 {
+    font-size: 33px;
+    font-family: 'Nunito', sans-serif;
+}
+
+p {
+    font-size: 20px;
+    margin-top: 5%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #979696;
+}
+
+article {
+    margin-top: 6%;
+
+}
+
+article>img {
+    margin-left: 15%;
+    width: 200px;
+    height: 200px;
+}
+
+
+
+/* ------ RESET  ------ */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ------ FORM MULTI  ------ */
+
+:root {
+    --primary-color: #1ba117;
+}
+
+/* Global Stylings */
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+input {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #000000;
+    border-radius: 0.25rem;
+    position: relative;
+    font-size: 20px;
+    color: #000000;
+    font-family: 'Nunito', sans-serif;
+}
+#genero{
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #000000;
+    border-radius: 0.25rem;
+    position: relative;
+    font-size: 5px;
+    color: #000000;
+    font-family: 'Nunito', sans-serif;
+}
+.width-50 {
+    width: 50%;
+}
+
+.ml-auto {
+    margin-left: auto;
+}
+
+.text-center {
+    text-align: center;
+    color: #000000;
+}
+
+/* Progressbar */
+.progressbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    counter-reset: step;
+    margin: 2rem 0 4rem;
+}
+
+.progressbar::before,
+.progress {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 100%;
+    background-color: #dcdcdc;
+    z-index: -1;
+}
+
+.progress {
+    background-color: var(--primary-color);
+    width: 0%;
+    transition: 0.3s;
+}
+
+.progress-step {
+    width: 2.1875rem;
+    height: 2.1875rem;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.progress-step::before {
+    counter-increment: step;
+    content: counter(step);
+}
+
+.progress-step::after {
+    content: attr(data-title);
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    font-size: 0.85rem;
+    color: #fffcfc;
+}
+
+.progress-step-active {
+    background-color: var(--primary-color);
+    color: #f3f3f3;
+}
+
+/* Form */
+.form {
+
+    width: clamp(20px, 30%, 600px);
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 0.35rem;
+    padding: 1.5rem;
+    display: block;
+    margin-top: 14%;
+    margin-left: 34%;
+}
+
+.form-step {
+    display: none;
+    transform-origin: top;
+    animation: animat 0.5s;
+}
+
+.form-step-active {
+    display: block;
+}
+
+.input-group {
+    margin: 2rem 0;
+    color: #ffffff;
+}
+
+@keyframes animat {
+    from {
+        transform: scale(1, 0);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+}
+#data-aniversario{
+    font-size: 20px;
+}
+
+#genero{
+    position: relative;
+    width: 100%;
+    height: 3rem;
+    font-size: 20px;
+    border-radius: 0.25rem;
+    padding: 0.75rem;
+}
+
+/* Button */
+.btns-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.btn {
+    padding: 0.75rem;
+    display: block;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: #f3f3f3;
+    text-align: center;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+}
+
+.btn:hover {
+    background-color:#1ba117;
+    color: white;
+}
